@@ -1,0 +1,5 @@
+Error from server (AlreadyExists): pods "mlmodel" already exists
+NAME      READY   STATUS    RESTARTS   AGE
+mlmodel   1/1     Running   0          11m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
