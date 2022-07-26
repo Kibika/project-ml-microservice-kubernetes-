@@ -39,11 +39,24 @@ source .devops/bin/activate
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
+* Setup and Configure Docker/Podman locally
+* Setup and Configure Kubernetes locally with minikube cluster
 * Create Flask app in Container
 * Run via kubectl
+
+1. To start a local cluster:
+   minikube start
+
+2. To deploy this application in kubernetes:
+   ./run_kubernetes.sh
+
+3. When the pod is up and running, make predictions using:
+   ./make_prediction.sh
+
+4. Delete the cluster after your done:
+   minikube delete
+
+Reference: https://itnext.io/goodbye-docker-desktop-hello-minikube-3649f2a1c469
